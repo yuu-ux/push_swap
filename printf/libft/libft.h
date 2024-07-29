@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:48:46 by yehara            #+#    #+#             */
-/*   Updated: 2024/07/25 20:39:20 by yehara           ###   ########.fr       */
+/*   Updated: 2024/07/29 21:09:53 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 char				*ft_strnstr(const char *str, const char *to_find,
 						size_t len);
-int					ft_atoi(const char *str);
+long					ft_atoi(const char *str);
 void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *s1);
 

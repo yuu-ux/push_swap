@@ -6,13 +6,13 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 11:38:21 by yehara            #+#    #+#             */
-/*   Updated: 2024/05/11 21:40:51 by yehara           ###   ########.fr       */
+/*   Updated: 2024/07/29 22:02:29 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ascii_to_int(const char *str, int flag)
+static long	ascii_to_int(const char *str, int flag)
 {
 	unsigned long	result;
 
@@ -23,21 +23,21 @@ static int	ascii_to_int(const char *str, int flag)
 			|| ((result == LONG_MAX / 10) && ((*str - '0') > 7)))
 		{
 			if (flag == 1)
-				return ((int)LONG_MAX);
+				return (LONG_MAX);
 			else
-				return ((int)LONG_MIN);
+				return (LONG_MIN);
 		}
 		result *= 10;
 		result += (*str - '0');
 		str++;
 	}
-	return ((int)(flag * result));
+	return ((flag * result));
 }
 
-int	ft_atoi(const char *str)
+long	ft_atoi(const char *str)
 {
 	int	flag;
-	int	result;
+	long	result;
 
 	flag = 1;
 	while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v'
@@ -56,7 +56,8 @@ int	ft_atoi(const char *str)
 // int	main(void)
 // {
 // 	char *str = "-9223372036854775807";
-// 	printf("%d\n", atoi(str));
+// 	printf("%d\n", atoi(str));i
 // 	printf("%d\n", ft_atoi(str));
 // 	return (0);
 // }
+
