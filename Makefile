@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror
 PRINTF = printf
 LIBFT = $(PRINTF)/libft
 
-PUSH_SOURCE = push_swap.c
+PUSH_SOURCE = push_swap.c make_stack.c
 
 all: $(PUSH_SWAP)
 
