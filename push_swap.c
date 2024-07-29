@@ -31,10 +31,40 @@ int check_error(int argument_n, char **argv)
 	return 1;
 }
 
-//void push_swap()
-//{
-//
-//}
+typede struct Node {
+	int data;
+	struct Node prev;
+	struct Node next;
+} Node;
+
+void	ft_lstadd_back(t_list **lst, t_list *new)
+{
+	if (!lst || !new)
+		return ;
+	if (*lst)
+		ft_lstlast(*lst)->next = new;
+	else
+		*lst = new;
+}
+
+void make_stack(char **argv)
+{
+	int i;
+	i = 1;
+	Node *head;
+	Node stack;
+	stack = (Node *)malloc(sizeof(Node));
+	while (argv[i]) 
+	{
+		ft_lstadd_back(&stack, argv[i]);
+	}
+
+}
+
+
+void push_swap()
+{
+}
 
 int main(int argc, char **argv)
 {
