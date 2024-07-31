@@ -46,7 +46,7 @@ void	ft_elemadd(t_elem **stack, t_elem *new_elem)
 	}
 }
 
-void	*make_stack(t_elem *stacka, char **argv)
+void	*generate_stack(t_elem *stacka, char **argv)
 {
 	int i;
 	t_elem *temp;

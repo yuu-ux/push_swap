@@ -13,5 +13,5 @@ t_elem	*ft_elemnew(int elem_num);
 t_elem	*ft_elemlast(t_elem *stack);
 void	ft_elemadd(t_elem **stack, t_elem *new_elem);
 void	error_call();
-int	check_error(int argc, char **argv);
-void	*make_stack(t_elem *stacka, char **argv);
+void	check_error(int argc, char **argv);
+void	*generate_stack(t_elem *stacka, char **argv);

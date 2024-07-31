@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 22:32:03 by yehara            #+#    #+#             */
-/*   Updated: 2024/07/30 01:39:53 by yehara           ###   ########.fr       */
+/*   Updated: 2024/07/31 19:40:58 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void error_call()
 	exit(EXIT_FAILURE);
 }
 
-int check_error(int argc, char **argv)
+void check_error(int argc, char **argv)
 {
 	int i;
 	int j;
@@ -46,7 +46,7 @@ int check_error(int argc, char **argv)
 		}
 		i++;
 	}
-	return 1;
+	return ;
 }
 
 //void push_swap()
@@ -72,7 +72,7 @@ int main(int argc, char **argv)
 		stacka->next = stacka;
 	}
 //	stackb = (t_elem *)malloc(sizeof(t_elem));
-	make_stack(stacka, argv);
+	generate_stack(stacka, argv);
 	t_elem *current;
 
 	if (stacka->next != stacka)
