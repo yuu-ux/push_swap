@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   generate_stack.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/01 15:33:21 by yehara            #+#    #+#             */
+/*   Updated: 2024/08/01 19:24:33 by yehara           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "h_push_swap.h"
 
 t_elem	*ft_elemnew(int elem_num)
@@ -61,3 +73,4 @@ void	*generate_stack(t_elem *stacka, char **argv)
 	}
 	return (stacka);
 }
+
