@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 15:33:21 by yehara            #+#    #+#             */
-/*   Updated: 2024/08/01 19:24:33 by yehara           ###   ########.fr       */
+/*   Updated: 2024/08/12 23:46:27 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,4 +73,3 @@ void	*generate_stack(t_elem *stacka, char **argv)
 	}
 	return (stacka);
 }
-

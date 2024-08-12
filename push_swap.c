@@ -6,7 +6,7 @@
 /*   By: yehara <yehara@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 22:32:03 by yehara            #+#    #+#             */
-/*   Updated: 2024/08/01 16:11:43 by yehara           ###   ########.fr       */
+/*   Updated: 2024/08/12 23:34:02 by yehara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void check_error(int argc, char **argv)
 int main(int argc, char **argv)
 {
 	t_elem	*stacka;
-//	t_elem	*stackb;
+	t_elem	*stackb;
 
 	check_error(argc, argv);
 	stacka = (t_elem *)malloc(sizeof(t_elem));
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
 		stacka->prev = stacka;
 		stacka->next = stacka;
 	}
-//	stackb = (t_elem *)malloc(sizeof(t_elem));
+	stackb = (t_elem *)malloc(sizeof(t_elem));
 	generate_stack(stacka, argv);
 	t_elem *current;
 
